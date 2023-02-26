@@ -8,6 +8,12 @@ import {SegmentedButtons} from 'react-native-paper';
 import {StyleSheet} from 'react-native';
 
 const ACTION_ICONS: Record<string, string> = {
+  Input: 'import',
+  Rec: 'record',
+  Caption: 'closed-caption',
+  Mode3D: 'video-3d',
+  DOT: 'circle-small',
+  Return: 'keyboard-return',
   AudioQualityMode: 'audio-input-rca',
   Mute: 'volume-mute',
   Wide: 'arrow-expand',
@@ -35,7 +41,11 @@ const ACTION_ICONS: Record<string, string> = {
 };
 
 const ACTION_STYLES: Record<string, any> = {
+  DpadCenter: {
+    textTransform: 'uppercase',
+  },
   Red: {
+    textColor: '#fff',
     backgroundColor: '#f00',
   },
   Green: {
